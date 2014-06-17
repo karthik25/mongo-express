@@ -95,7 +95,7 @@ exports.viewCollection = function(req, res, next) {
 
 exports.viewCollections = function(req, res, next) {
     req.updateCollections(req.db, req.dbName, function() {
-    res.redirect(config.site.baseUrl+'db/' + req.dbName);
+		res.redirect(config.site.baseUrl+'db/' + req.dbName);
    });
 };
 
