@@ -6,6 +6,7 @@ var doc = require('./document');
 exports.viewDatabase = db.viewDatabase;
 
 exports.viewCollection = coll.viewCollection;
+exports.viewCollections = coll.viewCollections;
 exports.addCollection = coll.addCollection;
 exports.deleteCollection = coll.deleteCollection;
 exports.renameCollection = coll.renameCollection;

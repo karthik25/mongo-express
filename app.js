@@ -298,6 +298,7 @@ app.put(config.site.baseUrl+'db/:database/:collection/:document', middleware, ro
 app.del(config.site.baseUrl+'db/:database/:collection/:document', middleware, routes.deleteDocument);
 app.post(config.site.baseUrl+'db/:database/:collection', middleware, routes.addDocument);
 
+app.get(config.site.baseUrl+'db/:database/hard-refresh', middleware, routes.viewCollections);
 app.get(config.site.baseUrl+'db/:database/:collection', middleware, routes.viewCollection);
 app.put(config.site.baseUrl+'db/:database/:collection', middleware, routes.renameCollection);
 app.del(config.site.baseUrl+'db/:database/:collection', middleware, routes.deleteCollection);
